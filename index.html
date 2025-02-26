@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media query</title>
+    <style>
+        .ticket-container{
+            height: 350px;
+            width: 800px;
+            margin: 30px auto;          
+            display: flex;
+
+            
+        }
+        .user-part{
+            background-color: #D8F9FA;
+            width: 40%;
+            border: 1px solid;
+            border-right:dashed;
+            border-radius: 10px;
+            padding: 10px;
+            box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
+
+        }
+        .event-part{
+            background-color:#D8F9FA;
+            width: 60%;
+            border-radius: 10px;
+            border:1px solid;
+            padding: 10px;
+            box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
+            border-left: none;
+        }
+        .c-logo{
+            height: 100px;
+            display: block;
+            margin: 10px auto;
+        }
+        .text-container{
+            text-align: center;
+            
+        }
+        .d-logo{
+            height: 80px;
+            display: block;
+            margin: 10px auto;
+        }
+
+        /* Mobile*/
+        @media (max-width:600px){
+            .ticket-container{
+                 flex-direction: column;   
+                 align-items: center;
+                 height: auto;
+                 width: 100%;                
+            }
+            .user-part{          
+            width: 250px;
+            height: 250px;
+            border: 1px solid black;
+            border-bottom:2px dashed;
+           
+
+        }
+        .event-part{
+            width: 250px;
+            height: 250px;
+            border: 1px solid black;
+            border-top: none;
+           
+        }
+        .c-logo{
+            height: 30px;
+            display: block;
+            margin: 3px auto;
+        }
+        .text-container{
+            text-align: center;
+            
+        }
+        .d-logo{
+            height: 30px;
+            display: block;
+            margin: 30px auto;
+        }          
+        }
+
+
+        /* tablet*/
+        @media (min-width:601px) and (max-width: 800px){
+            .ticket-container{
+                 flex-direction: column;
+                 align-items: center;
+                 height: auto;
+                 width: 100%;              
+            }
+            .user-part{          
+            width: 500px;
+            height: 300px;
+            border: 1px solid black;
+            border-bottom:2px dashed;
+           
+
+        }
+        .event-part{
+            width: 500px;
+            height: 300px;
+            border: 1px solid black;
+            border-top: none;
+           
+        }
+        .c-logo{
+            height: 60px;
+            display: block;
+            margin: 4px auto;
+        }
+        .text-container{
+            text-align: center;
+            
+        }
+        .d-logo{
+            height: 70px;
+            display: block;
+            margin: 4px auto;
+        }         
+
+        }
+
+        /* laptop*/
+        @media (min-width:801) and (max-width:1024){
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="ticket-container">
+        <div class="user-part">
+            <img src="photo.png" class="c-logo" alt="logo"/>
+            <h2 class="text-container">Cultural Event</h2>
+            <p>It is a fun way to learn about other cultures</p>
+            <img src="event.png" class="d-logo" alt="event-logo"/>
+            <h2 class="text-container">Thank You</h2>
+        </div>
+
+        <div class="event-part">
+            <img src="photo.png" class="c-logo" alt="logo"/>
+            <h2 class="text-container">Cultural Event</h2>
+            <p>It is a fun way to learn about other cultures</p>
+            <img src="event.png" class="d-logo" alt="event-logo"/>
+            <h2 class="text-container">Thank You</h2>
+
+        </div>
+    </div>
+    
+</body>
+</html>
